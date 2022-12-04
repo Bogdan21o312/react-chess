@@ -1,0 +1,8 @@
+@import "src/assets/style/Style.module";
+
+.Board {
+  @include adaptiveValue("width", 64 * 8, 32 * 8);
+  @include adaptiveValue("height", 64 * 8, 32 * 8);
+  display: flex;
+  flex-wrap: wrap;
+}
