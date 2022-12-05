@@ -1,0 +1,22 @@
+@import "src/assets/style/Style.module";
+
+.Cell {
+  @include adaptiveValue("width", 64 * 8, 32 * 8);
+  @include adaptiveValue("height", 64 * 8, 32 * 8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eed4ac;
+  img {
+    @include adaptiveValue("width", 48 * 8, 24 * 8);
+    @include adaptiveValue("height", 48 * 8, 24 * 8);
+    position: relative;
+  }
+}
+
+.black {
+  background-color: deepskyblue;
+}
+.white {
+  background-color: #eed4ac;
+}
